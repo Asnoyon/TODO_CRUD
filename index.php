@@ -51,7 +51,7 @@
                     <td class="py-3 fs-4">DELETE</td>
                     <td class="py-3 fs-4">UPDATE</td>
                 </tr>
-                <!-- Php result stor code -->
+                <!-- Php result store code -->
                 <?php
                     while($row=mysqli_fetch_array($rawData)){
 
@@ -69,7 +69,7 @@
                 <?php
                     }
                 ?>
-             <!-- Php result  code -->
+             <!-- Php result end code -->
             </table>
         </div>
     </div>
