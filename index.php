@@ -69,7 +69,7 @@
                 <?php
                     }
                 ?>
-
+             <!-- Php result  code -->
             </table>
         </div>
     </div>
