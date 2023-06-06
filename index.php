@@ -58,7 +58,7 @@
                 ?>
 
                 <tr>
-                    <td class="py-3"></td>
+                    <td class="py-3"> <?php echo $row['id']  ?> </td>
                     <td class="py-3"></td>
                     <td class="py-3"></td>
                     <td class="py-3"></td>
