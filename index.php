@@ -34,6 +34,11 @@
     </form>
 
     <!-- Get Result -->
+    <?php 
+    include "config.php";
+    $rawData = mysqli_query($conn, "select * from tbtodo");
+
+    ?>
     <div class="container">
         <div class="  bg-white mt-3">
             <table class="table">
@@ -46,6 +51,12 @@
                     <td class="py-3 fs-4">DELETE</td>
                     <td class="py-3 fs-4">UPDATE</td>
                 </tr>
+                <!-- Php result stor code -->
+                <?php
+                    while($row=mysqli_fetch_array($rawData)){
+
+                ?>
+
                 <tr>
                     <td class="py-3"></td>
                     <td class="py-3"></td>
@@ -55,6 +66,10 @@
                     <td style="width:10%;"><a href="delete.php" class="btn btn-outline-danger" >DELETE</a></td>
                     <td style="width:10%;"><a href="update.php" class="btn btn-outline-success" >UPDATE</a></td>
                 </tr>
+                <?php
+                    }
+                ?>
+
             </table>
         </div>
     </div>
