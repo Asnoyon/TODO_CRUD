@@ -41,7 +41,7 @@
     ?>
     <div class="container">
         <div class="  bg-white mt-3">
-            <table class="table">
+            <table class="table table-striped table-dark">
                 <tr>
                     <td class="py-3 fs-4">ID</td>
                     <td class="py-3 fs-4">Work List</td>
@@ -59,11 +59,11 @@
 
                 <tr>
                     <td class="py-3"> <?php echo $row['id']  ?> </td>
-                    <td class="py-3"> <?php echo $row['list']  ?></td>
+                    <td class="py-3 "> <?php echo $row['list']  ?></td>
                     <td class="py-3"> <?php echo $row['description']  ?></td>
                     <td class="py-3">  <?php echo $row['priority']  ?></td>
                     <td class="py-3">  <?php echo $row['date']  ?></td>
-                    <td style="width:10%;"><a href="delete.php" class="btn btn-outline-danger" >DELETE</a></td>
+                    <td style="width:10%;"><a href="delete.php? ID=<?php echo $row['id'] ?> " class="btn btn-outline-danger" >DELETE</a></td>
                     <td style="width:10%;"><a href="update.php" class="btn btn-outline-success" >UPDATE</a></td>
                 </tr>
                 <?php
