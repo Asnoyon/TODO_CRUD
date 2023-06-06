@@ -58,7 +58,7 @@
                 ?>
 
                 <tr>
-                    <td class="py-3 pe-2"> <?php echo $row['id']  ?> </td>
+                    <td class="py-3"> <?php echo $row['id']  ?> </td>
                     <td class="py-3"> <?php echo $row['list']  ?></td>
                     <td class="py-3"> <?php echo $row['description']  ?></td>
                     <td class="py-3">  <?php echo $row['priority']  ?></td>
