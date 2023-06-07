@@ -64,7 +64,7 @@
                     <td class="py-3">  <?php echo $row['priority']  ?></td>
                     <td class="py-3">  <?php echo $row['date']  ?></td>
                     <td style="width:10%;"> <a href="delete.php? ID= <?php echo $row['id'] ?>" class="btn btn-outline-danger" >DELETE</a></td>
-                    <td style="width:10%;"><a href="update.php" class="btn btn-outline-success" >UPDATE</a></td>
+                    <td style="width:10%;"><a href="update.php? ID= <?php echo $row['id'] ?> " class="btn btn-outline-success" >UPDATE</a></td>
                 </tr>
                 <?php
                     }
